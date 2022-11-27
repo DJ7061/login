@@ -29,7 +29,7 @@
                         <input type="text" placeholder="enter otp" class="input" id="otp">
                     </div>
                     <div class="field button-field">
-                        <button id="Verify">submit</button>
+                        <button onclick="window.open('confirm.html')" id="Verify">submit</button>
                     </div>
                 </form>
             </div>
@@ -107,19 +107,19 @@
             window.signingIn = false;
             console.log(error);
         })
-            verifyotp.onclick = function () {
-            confirmationResult.confirm(otpinput.value).then(function (response) {
-                onclick="window.open('confirm.html')"
-                var userobj = response.user;
-                var token = userobj.xa;
-                var provider = "phone";
-                var email = phoneinput.value;
+//             verifyotp.onclick = function () {
+//             confirmationResult.confirm(otpinput.value).then(function (response) {
+//                 onclick="window.open('confirm.html')"
+//                 var userobj = response.user;
+//                 var token = userobj.xa;
+//                 var provider = "phone";
+//                 var email = phoneinput.value;
 
-            })
-                .catch(function (error) {
-                    console.log(error);
-                })
-        }
+//             })
+//                 .catch(function (error) {
+//                     console.log(error);
+//                 })
+//         }
 
 
 
