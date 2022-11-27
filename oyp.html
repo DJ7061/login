@@ -29,7 +29,7 @@
                         <input type="text" placeholder="enter otp" class="input" id="otp">
                     </div>
                     <div class="field button-field">
-                        <button onclick="window.open('confirm.html')" id="Verify">submit</button>
+                        <button id="Verify">submit</button>
                     </div>
                 </form>
             </div>
@@ -109,19 +109,7 @@
         })
 
 
-        verifyotp.onclick = function () {
-            confirmationResult.confirm(otpinput.value).then(function (response) {
-                
-                // var userobj = response.user;
-                // var token = userobj.xa;
-                // var provider = "phone";
-                // var email = phoneinput.value;
-
-            })
-                .catch(function (error) {
-                    console.log(error);
-                })
-        }
+        
     }  
     </script>
 
