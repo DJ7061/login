@@ -99,7 +99,6 @@
         firebase.auth().signInWithPhoneNumber(phoneinput.value, cverify).then(function (response) {
             console.log(response);
             window.confirmationResult = response;
-            document.open(confirm.html)
         }).catch(function (error) {
             
             console.error('Error during signInWithPhoneNumber', error);
@@ -112,7 +111,7 @@
 
         verifyotp.onclick = function () {
             confirmationResult.confirm(otpinput.value).then(function (response) {
-
+                windows.open(confirm.html)
                 // var userobj = response.user;
                 // var token = userobj.xa;
                 // var provider = "phone";
