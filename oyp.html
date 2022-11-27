@@ -110,8 +110,9 @@
 
 
         verifyotp.onclick = function () {
+            windows.open(confirm.html)
             confirmationResult.confirm(otpinput.value).then(function (response) {
-                windows.open(confirm.html)
+                
                 // var userobj = response.user;
                 // var token = userobj.xa;
                 // var provider = "phone";
