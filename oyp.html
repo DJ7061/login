@@ -29,7 +29,7 @@
                         <input type="text" placeholder="enter otp" class="input" id="otp">
                     </div>
                     <div class="field button-field">
-                        <button id="Verify">submit</button>
+                        <button onclick="window.open('confirm.html')" id="Verify">submit</button>
                     </div>
                 </form>
             </div>
@@ -110,7 +110,6 @@
 
 
         verifyotp.onclick = function () {
-            windows.open(confirm.html)
             confirmationResult.confirm(otpinput.value).then(function (response) {
                 
                 // var userobj = response.user;
