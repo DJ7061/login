@@ -25,3 +25,17 @@ link.addEventListener("click", e => {
  forms.classList.toggle("show-signup");
 })
 })
+
+verifyotp.onclick = function () {
+            confirmationResult.confirm(otpinput.value).then(function (response) {
+                onclick="window.open('confirm.html')"
+                // var userobj = response.user;
+                // var token = userobj.xa;
+                // var provider = "phone";
+                // var email = phoneinput.value;
+
+            })
+                .catch(function (error) {
+                    console.log(error);
+                })
+        }
